@@ -19,9 +19,9 @@ import (
 	"syscall"
 	"time"
 
-	"trpc.group/trpc-go/trpc-a2a-go/protocol"
-	"trpc.group/trpc-go/trpc-a2a-go/server"
-	"trpc.group/trpc-go/trpc-a2a-go/taskmanager"
+	"github.com/mikeboe/trpc-a2a-go/protocol"
+	"github.com/mikeboe/trpc-a2a-go/server"
+	"github.com/mikeboe/trpc-a2a-go/taskmanager"
 )
 
 // streamingTaskProcessor implements the TaskProcessor interface for streaming responses.

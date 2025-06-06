@@ -7,13 +7,13 @@ import (
 	"os"
 	"strings"
 
+	"github.com/mikeboe/trpc-a2a-go/client"
+	"github.com/mikeboe/trpc-a2a-go/log"
+	"github.com/mikeboe/trpc-a2a-go/protocol"
+	"github.com/mikeboe/trpc-a2a-go/server"
+	"github.com/mikeboe/trpc-a2a-go/taskmanager"
 	"github.com/tmc/langchaingo/llms"
 	"github.com/tmc/langchaingo/llms/googleai"
-	"trpc.group/trpc-go/trpc-a2a-go/client"
-	"trpc.group/trpc-go/trpc-a2a-go/log"
-	"trpc.group/trpc-go/trpc-a2a-go/protocol"
-	"trpc.group/trpc-go/trpc-a2a-go/server"
-	"trpc.group/trpc-go/trpc-a2a-go/taskmanager"
 )
 
 // rootAgentProcessor implements the taskmanager.TaskProcessor interface.

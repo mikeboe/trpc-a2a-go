@@ -9,7 +9,7 @@ package server
 import (
 	"time"
 
-	"trpc.group/trpc-go/trpc-a2a-go/auth"
+	"github.com/mikeboe/trpc-a2a-go/auth"
 )
 
 const (

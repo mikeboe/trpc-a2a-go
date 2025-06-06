@@ -19,8 +19,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"trpc.group/trpc-go/trpc-a2a-go/internal/jsonrpc"
-	"trpc.group/trpc-go/trpc-a2a-go/protocol"
+	"github.com/mikeboe/trpc-a2a-go/internal/jsonrpc"
+	"github.com/mikeboe/trpc-a2a-go/protocol"
 )
 
 // TestA2AClient_SendTask tests the SendTask client method covering success,

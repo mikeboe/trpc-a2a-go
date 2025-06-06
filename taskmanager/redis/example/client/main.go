@@ -15,8 +15,8 @@ import (
 	"strings"
 	"time"
 
-	"trpc.group/trpc-go/trpc-a2a-go/client"
-	"trpc.group/trpc-go/trpc-a2a-go/protocol"
+	"github.com/mikeboe/trpc-a2a-go/client"
+	"github.com/mikeboe/trpc-a2a-go/protocol"
 )
 
 // printTaskDetails prints the details of a task to the console.

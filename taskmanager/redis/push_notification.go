@@ -17,9 +17,9 @@ import (
 	"strings"
 	"time"
 
-	"trpc.group/trpc-go/trpc-a2a-go/auth"
-	"trpc.group/trpc-go/trpc-a2a-go/log"
-	"trpc.group/trpc-go/trpc-a2a-go/protocol"
+	"github.com/mikeboe/trpc-a2a-go/auth"
+	"github.com/mikeboe/trpc-a2a-go/log"
+	"github.com/mikeboe/trpc-a2a-go/protocol"
 )
 
 // getPushNotificationConfig retrieves a push notification configuration for a task.

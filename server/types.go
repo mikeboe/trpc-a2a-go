@@ -8,7 +8,7 @@
 package server
 
 import (
-	"trpc.group/trpc-go/trpc-a2a-go/protocol"
+	"github.com/mikeboe/trpc-a2a-go/protocol"
 )
 
 // AgentCapabilities defines the capabilities supported by an agent.

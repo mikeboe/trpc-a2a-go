@@ -10,8 +10,8 @@ package protocol_test
 import (
 	"testing"
 
+	"github.com/mikeboe/trpc-a2a-go/protocol"
 	"github.com/stretchr/testify/assert"
-	"trpc.group/trpc-go/trpc-a2a-go/protocol"
 )
 
 // TestMethodConstants ensures that the RPC method constants are correctly defined

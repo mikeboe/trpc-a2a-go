@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/mikeboe/trpc-a2a-go/internal/jsonrpc"
 	"github.com/stretchr/testify/assert"
-	"trpc.group/trpc-go/trpc-a2a-go/internal/jsonrpc"
 )
 
 func TestNewEventReader(t *testing.T) {

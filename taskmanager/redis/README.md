@@ -20,7 +20,7 @@ This package provides a Redis-based implementation of the A2A TaskManager interf
 ## Installation
 
 ```bash
-go get trpc.group/trpc-go/trpc-a2a-go/taskmanager/redis
+go get github.com/mikeboe/trpc-a2a-go/taskmanager/redis
 ```
 
 ## Usage
@@ -34,8 +34,8 @@ import (
     "time"
 
     "github.com/redis/go-redis/v9"
-    "trpc.group/trpc-go/trpc-a2a-go/taskmanager"
-    redismgr "trpc.group/trpc-go/trpc-a2a-go/taskmanager/redis"
+    "github.com/mikeboe/trpc-a2a-go/taskmanager"
+    redismgr "github.com/mikeboe/trpc-a2a-go/taskmanager/redis"
 )
 
 func main() {
@@ -136,4 +136,4 @@ See the [example directory](./example) for a complete working example.
 
 ## License
 
-This package is part of the A2A Go implementation and follows the same license. 
+This package is part of the A2A Go implementation and follows the same license.

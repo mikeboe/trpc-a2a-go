@@ -14,8 +14,8 @@ import (
 	"fmt"
 	"io"
 
-	"trpc.group/trpc-go/trpc-a2a-go/internal/jsonrpc"
-	"trpc.group/trpc-go/trpc-a2a-go/log"
+	"github.com/mikeboe/trpc-a2a-go/internal/jsonrpc"
+	"github.com/mikeboe/trpc-a2a-go/log"
 )
 
 // CloseEventData represents the data payload for a close event.

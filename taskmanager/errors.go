@@ -10,8 +10,8 @@ package taskmanager
 import (
 	"fmt"
 
-	"trpc.group/trpc-go/trpc-a2a-go/internal/jsonrpc"
-	"trpc.group/trpc-go/trpc-a2a-go/protocol"
+	"github.com/mikeboe/trpc-a2a-go/internal/jsonrpc"
+	"github.com/mikeboe/trpc-a2a-go/protocol"
 )
 
 // Custom JSON-RPC error codes specific to the TaskManager.

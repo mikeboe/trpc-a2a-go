@@ -1,6 +1,6 @@
 # tRPC-A2A-Go
 
-[![Go Reference](https://pkg.go.dev/badge/trpc.group/trpc-go/trpc-a2a-go.svg)](https://pkg.go.dev/trpc.group/trpc-go/trpc-a2a-go)
+[![Go Reference](https://pkg.go.dev/badge/github.com/mikeboe/trpc-a2a-go.svg)](https://pkg.go.dev/github.com/mikeboe/trpc-a2a-go)
 [![Go Report Card](https://goreportcard.com/badge/github.com/trpc-group/trpc-a2a-go)](https://goreportcard.com/report/github.com/trpc-group/trpc-a2a-go)
 [![LICENSE](https://img.shields.io/badge/license-Apache--2.0-green.svg)](https://github.com/trpc-group/trpc-a2a-go/blob/main/LICENSE)
 [![Releases](https://img.shields.io/github/release/trpc-group/trpc-a2a-go.svg?style=flat-square)](https://github.com/trpc-group/trpc-a2a-go/releases)
@@ -70,6 +70,7 @@ The repository includes several examples demonstrating different aspects of the 
 ### 1. Simple Example ([examples/simple](examples/simple))
 
 A minimal example demonstrating the core A2A functionality:
+
 - Simple server that reverses text input
 - Simple client that sends non-streaming requests
 - Basic task lifecycle (submission, processing, completion)
@@ -91,6 +92,7 @@ go run main.go --message "Text to be reversed"
 ### 2. Streaming Examples ([examples/streaming](examples/streaming))
 
 Examples focused on streaming capabilities:
+
 - Server implementation with streaming response support
 - Client implementation for handling streaming data
 
@@ -107,6 +109,7 @@ go run main.go
 ### 3. Basic Example ([examples/basic](examples/basic))
 
 A comprehensive example showcasing:
+
 - A versatile text processing server with multiple operations
 - A feature-rich CLI client with support for all core A2A protocol APIs
 - Streaming and non-streaming modes
@@ -117,6 +120,7 @@ A comprehensive example showcasing:
 ### 4. Authentication Examples ([examples/auth](examples/auth))
 
 Complete examples demonstrating authentication:
+
 - Server implementation with various authentication methods
 - Client examples showing how to connect with different auth methods
 - JWT, API key, and OAuth2 implementations
@@ -156,8 +160,8 @@ This interface defines how your agent processes incoming tasks:
 import (
     "context"
 
-    "trpc.group/trpc-go/trpc-a2a-go/protocol"
-    "trpc.group/trpc-go/trpc-a2a-go/taskmanager"
+    "github.com/mikeboe/trpc-a2a-go/protocol"
+    "github.com/mikeboe/trpc-a2a-go/taskmanager"
 )
 
 // Implement the TaskProcessor interface
@@ -186,8 +190,8 @@ The agent card describes your agent's capabilities:
 
 ```go
 import (
-    "trpc.group/trpc-go/trpc-a2a-go/server"
-    "trpc.group/trpc-go/trpc-a2a-go/protocol"
+    "github.com/mikeboe/trpc-a2a-go/server"
+    "github.com/mikeboe/trpc-a2a-go/protocol"
 )
 
 // Helper function to create string pointers
@@ -231,8 +235,8 @@ Initialize the server with your task processor and agent card:
 import (
     "log"
 
-    "trpc.group/trpc-go/trpc-a2a-go/server"
-    "trpc.group/trpc-go/trpc-a2a-go/taskmanager"
+    "github.com/mikeboe/trpc-a2a-go/server"
+    "github.com/mikeboe/trpc-a2a-go/taskmanager"
 )
 
 // Create the task processor
@@ -278,9 +282,9 @@ The tRPC-A2A-Go framework supports multiple authentication methods for securing 
 ```go
 import (
     "time"
-    
-    "trpc.group/trpc-go/trpc-a2a-go/auth"
-    "trpc.group/trpc-go/trpc-a2a-go/server"
+
+    "github.com/mikeboe/trpc-a2a-go/auth"
+    "github.com/mikeboe/trpc-a2a-go/server"
 )
 
 // Create a JWT authentication provider
@@ -308,7 +312,7 @@ oauth2Provider := auth.NewOAuth2AuthProviderWithConfig(
 
 // Chain multiple authentication methods
 chainProvider := auth.NewChainAuthProvider(
-    jwtProvider, 
+    jwtProvider,
     apiKeyProvider,
     oauth2Provider,
 )
@@ -340,7 +344,7 @@ Create authenticated clients using the appropriate options:
 
 ```go
 import (
-    "trpc.group/trpc-go/trpc-a2a-go/client"
+    "github.com/mikeboe/trpc-a2a-go/client"
 )
 
 // JWT Authentication
@@ -411,6 +415,7 @@ taskParams := protocol.SendTaskParams{
 ```
 
 This allows for:
+
 - Grouping related tasks under a single session
 - Multi-turn conversations across different task IDs
 - Better organization and retrieval of task history

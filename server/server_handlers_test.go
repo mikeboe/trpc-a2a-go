@@ -22,10 +22,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"trpc.group/trpc-go/trpc-a2a-go/auth"
-	"trpc.group/trpc-go/trpc-a2a-go/internal/jsonrpc"
-	"trpc.group/trpc-go/trpc-a2a-go/protocol"
-	"trpc.group/trpc-go/trpc-a2a-go/taskmanager"
+	"github.com/mikeboe/trpc-a2a-go/auth"
+	"github.com/mikeboe/trpc-a2a-go/internal/jsonrpc"
+	"github.com/mikeboe/trpc-a2a-go/protocol"
+	"github.com/mikeboe/trpc-a2a-go/taskmanager"
 )
 
 // Helper functions for testing

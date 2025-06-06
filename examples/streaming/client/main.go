@@ -17,10 +17,10 @@ import (
 
 	"github.com/google/uuid"
 
-	"trpc.group/trpc-go/trpc-a2a-go/client"
-	"trpc.group/trpc-go/trpc-a2a-go/log"
-	"trpc.group/trpc-go/trpc-a2a-go/protocol"
-	"trpc.group/trpc-go/trpc-a2a-go/server"
+	"github.com/mikeboe/trpc-a2a-go/client"
+	"github.com/mikeboe/trpc-a2a-go/log"
+	"github.com/mikeboe/trpc-a2a-go/protocol"
+	"github.com/mikeboe/trpc-a2a-go/server"
 )
 
 func main() {

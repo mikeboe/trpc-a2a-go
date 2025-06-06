@@ -16,9 +16,9 @@ import (
 	"os/signal"
 	"syscall"
 
-	"trpc.group/trpc-go/trpc-a2a-go/protocol"
-	"trpc.group/trpc-go/trpc-a2a-go/server"
-	"trpc.group/trpc-go/trpc-a2a-go/taskmanager"
+	"github.com/mikeboe/trpc-a2a-go/protocol"
+	"github.com/mikeboe/trpc-a2a-go/server"
+	"github.com/mikeboe/trpc-a2a-go/taskmanager"
 )
 
 // simpleTaskProcessor implements the taskmanager.TaskProcessor interface.

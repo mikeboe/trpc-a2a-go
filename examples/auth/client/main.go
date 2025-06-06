@@ -16,10 +16,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/mikeboe/trpc-a2a-go/auth"
+	"github.com/mikeboe/trpc-a2a-go/client"
+	"github.com/mikeboe/trpc-a2a-go/protocol"
 	"golang.org/x/oauth2/clientcredentials"
-	"trpc.group/trpc-go/trpc-a2a-go/auth"
-	"trpc.group/trpc-go/trpc-a2a-go/client"
-	"trpc.group/trpc-go/trpc-a2a-go/protocol"
 )
 
 // config holds the client configuration options.

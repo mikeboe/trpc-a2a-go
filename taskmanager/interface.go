@@ -10,7 +10,7 @@ package taskmanager
 import (
 	"context"
 
-	"trpc.group/trpc-go/trpc-a2a-go/protocol"
+	"github.com/mikeboe/trpc-a2a-go/protocol"
 )
 
 // TaskHandle provides methods for the agent logic (TaskProcessor) to interact

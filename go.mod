@@ -1,4 +1,4 @@
-module trpc.group/trpc-go/trpc-a2a-go
+module github.com/mikeboe/trpc-a2a-go
 
 go 1.23.0
 

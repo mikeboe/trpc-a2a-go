@@ -22,9 +22,9 @@ import (
 	"syscall"
 	"time"
 
-	"trpc.group/trpc-go/trpc-a2a-go/protocol"
-	"trpc.group/trpc-go/trpc-a2a-go/server"
-	"trpc.group/trpc-go/trpc-a2a-go/taskmanager"
+	"github.com/mikeboe/trpc-a2a-go/protocol"
+	"github.com/mikeboe/trpc-a2a-go/server"
+	"github.com/mikeboe/trpc-a2a-go/taskmanager"
 )
 
 // Command modes for the text processor

@@ -13,12 +13,12 @@ import (
 	"testing"
 	"time"
 
-	// "trpc.group/trpc-go/trpc-a2a-go/internal/jsonrpc" // Removed unused import
+	// "github.com/mikeboe/trpc-a2a-go/internal/jsonrpc" // Removed unused import
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"trpc.group/trpc-go/trpc-a2a-go/internal/jsonrpc"
-	"trpc.group/trpc-go/trpc-a2a-go/protocol"
+	"github.com/mikeboe/trpc-a2a-go/internal/jsonrpc"
+	"github.com/mikeboe/trpc-a2a-go/protocol"
 )
 
 // mockProcessor is a simple TaskProcessor for testing.

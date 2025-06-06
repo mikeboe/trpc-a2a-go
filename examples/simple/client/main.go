@@ -16,8 +16,8 @@ import (
 
 	"github.com/google/uuid"
 
-	"trpc.group/trpc-go/trpc-a2a-go/client"
-	"trpc.group/trpc-go/trpc-a2a-go/protocol"
+	"github.com/mikeboe/trpc-a2a-go/client"
+	"github.com/mikeboe/trpc-a2a-go/protocol"
 )
 
 func main() {
@@ -71,20 +71,20 @@ func main() {
 	log.Printf("Task %s initial state: %s", taskID, task.Status.State)
 
 	// Wait for the task to complete if it's not already done.
-	if task.Status.State != protocol.TaskStateCompleted && 
-	   task.Status.State != protocol.TaskStateFailed && 
-	   task.Status.State != protocol.TaskStateCanceled {
-		
+	if task.Status.State != protocol.TaskStateCompleted &&
+		task.Status.State != protocol.TaskStateFailed &&
+		task.Status.State != protocol.TaskStateCanceled {
+
 		log.Printf("Task %s is %s, fetching final state...", taskID, task.Status.State)
-		
+
 		// Get the task's final state.
 		queryParams := protocol.TaskQueryParams{
 			ID: taskID,
 		}
-		
+
 		// Give the server some time to process.
 		time.Sleep(500 * time.Millisecond)
-		
+
 		task, err = a2aClient.GetTasks(ctx, queryParams)
 		if err != nil {
 			log.Fatalf("Failed to get task status: %v", err)
@@ -127,4 +127,4 @@ func main() {
 			}
 		}
 	}
-} 
+}

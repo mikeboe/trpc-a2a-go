@@ -6,7 +6,7 @@ toolchain go1.23.7
 
 require (
 	github.com/tmc/langchaingo v0.1.13
-	trpc.group/trpc-go/trpc-a2a-go v0.0.0
+	github.com/mikeboe/trpc-a2a-go v0.0.0
 )
 
 require (
@@ -64,4 +64,4 @@ require (
 	google.golang.org/protobuf v1.34.1 // indirect
 )
 
-replace trpc.group/trpc-go/trpc-a2a-go => ../..
+replace github.com/mikeboe/trpc-a2a-go => ../..
