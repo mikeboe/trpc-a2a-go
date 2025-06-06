@@ -260,6 +260,8 @@ func (s *A2AServer) routeJSONRPCMethod(ctx context.Context, w http.ResponseWrite
 		s.handleTasksPushNotificationGet(ctx, w, request)
 	case protocol.MethodTasksResubscribe: // A2A Spec: tasks/resubscribe
 		s.handleTasksResubscribe(ctx, w, request)
+	case protocol.MethodInitialize:
+		fmt.Println("Initialize method called, but not implemented in this server.")
 	default:
 		log.Warnf("Method not found: %s (Request ID: %v)", request.Method, request.ID)
 		s.writeJSONRPCError(w, request.ID,

@@ -16,6 +16,7 @@ const (
 	MethodTasksPushNotificationSet = "tasks/pushNotification/set"
 	MethodTasksPushNotificationGet = "tasks/pushNotification/get"
 	MethodTasksResubscribe         = "tasks/resubscribe"
+	MethodInitialize               = "initialize"
 )
 
 // A2A SSE Event Types define the standard event type strings used in A2A SSE streams.
